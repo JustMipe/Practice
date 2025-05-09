@@ -12,3 +12,4 @@ but what will really come out of this I don't know myself yet.
 ## ✨ Functionalities 
 - ✅ Variable
 - ✅ Function
+- ✅ Loop
