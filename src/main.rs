@@ -1,32 +1,45 @@
+use std::process::Command;
 use std::io;
 
-fn menu() {
-    println!("1. Přihlásit");
-    println!("2. Registrovat");
+fn clear() {
+    if cfg!(target_os = "windows") {
+        Command::new("cmd").args(["/C", "cls"]).status().unwrap();
+    } else {
+        Command::new("clear").status().unwrap();
+    }
 }
 
-fn prihlasit() {
-
-}
-
-fn registrovat() {
-    
+fn show_menu() {
+    clear();
+    println!("1. Log-in");
+    println!("2. Sign-up");
 }
 
 fn main() {
-    // Zobrazí menu
-    menu();
+    // Show menu
+    show_menu();
 
-    let mut volba = String::new();
+    loop {
+        // Variable with input
+        let mut choice = String::new();
+        io::stdin().read_line(&mut choice).expect("Write failed");
 
-    io::stdin().read_line(&mut volba).expect("Zápis selhal");
-
-    //println!("Zvoleno: {}", volba.trim());
-
-    match volba.trim()  {
-        "1" => println!("Zvoleno přihlášení"),
-        "2" => println!("Zvolena registrace"),
-        _ => println!("CHYBA: Zvolte výběr z menu!"),
+        // Matching user's output
+        match choice.trim()  {
+            "1" => {
+                clear();
+                println!("Sucessful log-in!");
+                break;
+            }
+            "2" => {
+                clear();
+                println!("Welcome in Registration!");
+                break
+            }
+            _ => {
+                show_menu();
+                println!("ERROR: CHOOSE 1 or 2!");
+            }
+        }   
     }
-
 }
