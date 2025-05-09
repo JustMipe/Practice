@@ -10,6 +10,6 @@ The original idea is to create a registration system and logging into it,
 but what will really come out of this I don't know myself yet.
 
 ## ✨ Functionalities 
-- ✅ 1
+- ✅ Variables
 - ✅ 2
 - ✅ 3
