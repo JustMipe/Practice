@@ -11,5 +11,3 @@ but what will really come out of this I don't know myself yet.
 
 ## ✨ Functionalities 
 - ✅ Variables
-- ✅ 2
-- ✅ 3
