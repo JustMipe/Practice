@@ -5,6 +5,7 @@ use std::io;
 
 fn main() {
     clear(); // Clear terminal for first use
+    // List of users created
     let mut user_list: Vec<String> = vec![];
 
     loop {
