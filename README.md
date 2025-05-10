@@ -14,3 +14,4 @@ but what will really come out of this I don't know myself yet.
 - ✅ Function
 - ✅ Loop
 - ✅ Match pattern
+- ✅ Project structure
