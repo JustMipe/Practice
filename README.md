@@ -17,4 +17,4 @@ but what will really come out of this I don't know myself yet.
 - ✅ Function
 - ✅ Loop
 - ✅ Pattern matching
-- ✅ Project structure
+- ✅ Project structure 
