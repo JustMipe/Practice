@@ -13,9 +13,9 @@ fn clear() {
 /// Show menu and return input
 fn show_menu() -> String {
     let mut choice = String::new();
-    println!("1. Registrovat se");
-    println!("2. Zobrazit seznam");
-    println!("3. Ukončit");
+    println!("1. Register");
+    println!("2. Show list of users");
+    println!("3. Quit");
     io::stdin().read_line(&mut choice).unwrap();
     clear();
     return choice;
@@ -23,7 +23,7 @@ fn show_menu() -> String {
 
 fn registrace() -> String {
     let mut prezdivka = String::new();
-    println!("Zadej přezdívku:");
+    println!("Set nickname:");
     io::stdin().read_line(&mut prezdivka).unwrap();
     clear();
     return prezdivka;
@@ -36,40 +36,31 @@ fn main() {
     loop {
         clear();
         let volba = show_menu();  // Zavolá menu a input
-
         match volba.trim() {
             "1" => loop {
                 let udaje = registrace();
                 user_list.push(udaje);
-                println!("ÚSPĚŠNĚ REGISTROVÁNO!");
-               
                 break;
             }
             "2" => { loop {
                     for x in &user_list {
                         print!("{}", x);
                     }
-                    println!("Přejete se vrátit zpět do menu? (ano/ne)");
+                    println!("Would you like back to menu? (yes/no)");
                     let mut vratit_zpet = String::new();
                     io::stdin().read_line(&mut vratit_zpet).unwrap();
                     match vratit_zpet.trim() {
-                        "ano" => break,
+                        "yes" => break,
                         _ => continue,
                     }
                 }
             }
             "3" => {
                 clear();
-                println!("PROGRAM UKONČEN!");
+                println!("PROGRAM CLOSED!");
                 break;
             }
             _ => println!("ERROR"),
         }
-
-
     }
-    
-    
-
-
 }
