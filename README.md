@@ -9,6 +9,9 @@ because practice and repetition is the mother of wisdom.
 The original idea is to create a registration system and logging into it, 
 but what will really come out of this I don't know myself yet.
 
+![Demo](https://github.com/JustMipe/Practice/assets/0123.gif)
+
+
 ## ✨ Functionalities 
 - ✅ Variable
 - ✅ Function
