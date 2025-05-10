@@ -16,8 +16,5 @@ but what will really come out of this I don't know myself yet.
 - ✅ Variable
 - ✅ Function
 - ✅ Loop
-- ✅ Match pattern
-<<<<<<< HEAD
+- ✅ Pattern matching
 - ✅ Project structure
-=======
->>>>>>> 47637520867044ab9fd15c19a10a64e606cd9124
