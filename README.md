@@ -2,7 +2,7 @@
 
 **Description**  
 This repository is used to practice Rust and Git
-including a Development Log.<br>It's just to illustrate that I'm learning how to work with it.
+including a Development Log.<br>This repository just exists to illustrate that I'm learning how to work with these technology.
 
 
 ## 🛠️ About project
