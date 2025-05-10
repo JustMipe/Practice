@@ -1,7 +1,9 @@
 ## Practice project
 
 **Description**  
-This repository is used to practice rust and git.
+This repository is used to practice Rust and Git
+including a Development Log. It's just to illustrate that I'm learning how to work with it.
+
 
 ## 🛠️ About project
 It will contain functionalities and concepts I have learned and applied to the project so far
